@@ -1,0 +1,43 @@
+button, #Atext, #text {
+  border: 1px solid;
+  border-radius: 5px;
+}
+
+button {
+  border: 1px solid;
+  border-radius: 5px;
+  background-color: blue;
+  color: white;
+}
+
+div {
+  text-align: right;
+  display: block;
+}
+
+#button {
+  padding: 5px;
+  border: 1px solid;
+  border-radius: 5px;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+#text {
+  width: 300px;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+#Atext {
+  width: 300px;
+}
+
+button {
+  padding: 10px;
+  background-color: blue;
+  color: white;
+}
+
+/*# sourceMappingURL=googleSearch.css.map */
