@@ -4,21 +4,18 @@
         <title>Google Search</title>
         <link rel="stylesheet" href="googleSearch.css">
     </head>
-    <body>
-        <div>
+    <body class="docFont">
+        <div class="navLinks">
             <a href="imageSearch.html">Go to Google Image Search</a><br>
             <a href="advancedSearch.html">Go to Google Advanced Search</a>
         </div>
-        <center>
-        <img style="padding-top:109px; width:272px;" src="google.png" />
+        <img class="mainIcon" src="google.png" />
         <form action="https://google.com/search">
-            <input id="text" type="text" name="q" ><br>
-            <input id="button" type="submit" value="Google Search">
+            <input class="text" type="text" name="q" ><br>
+            <div class="callToActions">                     
+                <input class="button" type="submit" value="Google Search">
+                <input class="button" type="submit" name="btnI" value="I'm Feeling Lucky" /> 
+            </div>
         </form>
-        
-        <form action="https://google.com/doodles">
-            <input id="button" type="submit" value="I'm Feeling Lucky" /> 
-        </form>
-        </center> 
     </body>
 </html>

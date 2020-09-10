@@ -4,24 +4,30 @@
         <title>Google Advanced Search</title>
         <link rel="stylesheet" href="googleSearch.css">
     </head>
-    <body>
-        <div>
+    <body class="advBody">
+        <div class="navLinks">
             <a href="search.html">Go to Google Search</a>
         </div>
-        <form action="https://google.com/search">
-            <label for="q">All these words:</label>
-            <input id="Atext" type="text" name="as_q"><br>
-            <br>
-            <label for="q">This exact word or phrase:</label>
-            <input id="Atext" type="text" name="as_epq"><br>
-            <br>
-            <label for="q">Any of these words:</label>
-            <input id="Atext" type="text" name="as_oq"><br>
-            <br>
-            <label for="q">None of these words:</label>
-            <input id="Atext" type="text" name="as_eq"><br>
-            <br>
-            <button type="submit">Advanced Search</button>
+        <form class="searchForm" action="https://google.com/search">
+            <div class>
+                <div class="searchItem">
+                    <label for="q">All these words:</label>
+                    <input class="searchInputText" type="text" name="as_q">
+                </div>
+                <div class="searchItem">
+                    <label for="q">This exact word or phrase:</label>
+                    <input class="searchInputText" type="text" name="as_epq">
+                </div>
+                <div class="searchItem">
+                    <label for="q">Any of these words:</label>
+                    <input class="searchInputText" type="text" name="as_oq">
+                </div>
+                <div class="searchItem">
+                    <label for="q">None of these words:</label>
+                    <input class="searchInputText" type="text" name="as_eq">
+                </div>
+            </div>
+            <button class="Abutton" type="submit">Advanced Search</button>
         </form>
     </body>
 </html>

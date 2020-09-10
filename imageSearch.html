@@ -4,19 +4,19 @@
         <title>Google Image Search</title>
         <link rel="stylesheet" href="googleSearch.css">
     </head>
-    <body>
-        <div>
+    <body class="docFont">
+        <div class="navLinks">
             <a href="search.html">Go to Google Search</a>
         </div>
         <br>
-        <center>
-        <img style="width:300px;" src="google.png" />
+        <img class="mainIcon" src="google.png" />
         
         <form action="https://google.com/search">
-            <input id="text" type="text" name="q"><br>
+            <input class="text" type="text" name="q"><br>
             <input type="hidden" name="tbm" value="isch">
-            <input id="button" type="submit" value="Image Search">
+            <div class="callToActions">
+                <input class="button" type="submit" value="Image Search">
+            </div>
         </form>
-        </center>
     </body>
 </html>

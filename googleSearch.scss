@@ -1,7 +1,27 @@
-%bSize {
-    border: 1px solid;
-    border-radius: 5px;
+$padding1: 8px;
 
+
+%boxBorder {
+    border-radius: 8px;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    
+
+}
+
+%boxShadow {
+    box-shadow: 2px 2px 4px black;
+}
+
+.advBody {
+    width: 100vw;
+    height: 100vh;
+    margin: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
 button {
@@ -11,12 +31,7 @@ button {
     color: white;
 }
 
-div {
-    text-align: right; 
-    display: block; 
-}
-
-#button {
+.button {
     padding: 5px;
     border: 1px solid;
     border-radius: 5px;
@@ -25,21 +40,66 @@ div {
     flex-direction: row;
 }
 
-#text {
-    @extend %bSize;
+.text {
     width: 300px;
-    padding: 10px;
+    padding: 8px;
     border-radius: 30px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-#Atext {
-    @extend %bSize;
-    width: 300px;
+.searchInputText {
+    @extend %boxBorder;
+    width: 200px;
 }
 
-button {
-    @extend %bSize;
-    padding: 10px;
+.Abutton {
+    @extend %boxBorder;
+    padding: $padding1;
     background-color: blue;
     color: white;
+}
+
+.callToActions {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.searchItem {
+    padding-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+.searchItem:last-child {
+    padding: unset;
+}
+
+.searchForm {
+    width: 400px;
+    padding: $padding1;
+    @extend %boxBorder;
+    @extend %boxShadow;
+}
+
+.navLinks {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: $padding1;
+}
+
+.docFont {
+    font-family: Roboto,HelveticaNeue,Arial,sans-serif;
+    font-size: 10pt;
+}
+
+.mainIcon {
+    display: flex;
+    padding-top: 109px;
+    padding-bottom: 20px;
+    width: 272px;
+    margin-left: auto;
+    margin-right: auto;
 }
