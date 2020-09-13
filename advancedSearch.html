@@ -4,29 +4,51 @@
         <title>Google Advanced Search</title>
         <link rel="stylesheet" href="googleSearch.css">
     </head>
-    <body class="advBody">
+    <body class="docFont">
         <div class="navLinks">
-            <a href="search.html">Go to Google Search</a>
+            <a class="linkStyle" href="search.html">Google Search</a>
         </div>
+        <div class="advTitMargin">
+            <label class="advTit">Advanced Search</label>
+        </div>
+        
         <form class="searchForm" action="https://google.com/search">
-            <div class>
-                <div class="searchItem">
-                    <label for="q">All these words:</label>
+            <div class="titleItem" style="padding-bottom: 8px;">
+                <label class="secTit">Find pages with...</label>
+            </div>
+            <div class="searchItem">
+                <div class="titleItem">
+                    <label class="advItemTitle">All these words:</label>
+                </div>
+                <div class="aText">
                     <input class="searchInputText" type="text" name="as_q">
                 </div>
-                <div class="searchItem">
-                    <label for="q">This exact word or phrase:</label>
+            </div>
+            <div class="searchItem">
+                <div class="titleItem">
+                    <label class="advItemTitle">This exact word or phrase:</label>
+                </div>
+                <div class="aText">
                     <input class="searchInputText" type="text" name="as_epq">
                 </div>
-                <div class="searchItem">
-                    <label for="q">Any of these words:</label>
+            </div>
+            <div class="searchItem">
+                <div class="titleItem">
+                    <label class="advItemTitle">Any of these words:</label>
+                </div>
+                <div class="aText">
                     <input class="searchInputText" type="text" name="as_oq">
                 </div>
-                <div class="searchItem">
-                    <label for="q">None of these words:</label>
+            </div>
+            <div class="searchItem">
+                <div class="titleItem">
+                    <label class="advItemTitle">None of these words:</label>
+                </div>
+                <div class="aText">
                     <input class="searchInputText" type="text" name="as_eq">
                 </div>
             </div>
+        </div>
             <button class="Abutton" type="submit">Advanced Search</button>
         </form>
     </body>
