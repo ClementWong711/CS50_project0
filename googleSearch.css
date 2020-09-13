@@ -9,27 +9,73 @@
   width: 400px;
 }
 
-.mainIcon, .textBox {
+.Abutton, .textBox, .mainIcon {
   display: flex;
   margin-left: auto;
   margin-right: auto;
 }
 
-.searchForm, .Abutton, .searchInputText {
+.Abutton, .aText {
   border-radius: 8px;
   border-color: #9e9e9e;
   border-width: 1px;
   border-style: solid;
 }
 
-.searchForm, .button:hover, .textBox:hover {
+.Abutton:hover, .button:hover, .textBox:hover {
   box-shadow: 2px 2px 4px #9e9e9e;
+}
+
+.docFont {
+  font-family: Roboto, HelveticaNeue, Arial, sans-serif;
+  font-size: 10pt;
+}
+
+.navLinks {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 20px;
+}
+
+.linkStyle {
+  padding: 8px;
+  color: black;
+  text-decoration: none;
+}
+
+.linkStyle:hover {
+  color: grey;
+  text-decoration: underline;
+}
+
+.mainIcon {
+  padding-top: 109px;
+  padding-bottom: 20px;
+  width: 272px;
+}
+
+.magnItem {
+  padding: 12px;
+  width: 20px;
+  height: 20px;
+}
+
+.callToActions {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .text {
   font: 16px arial, sans-serif;
   width: 330px;
   border: none;
+}
+
+.text:focus {
+  outline: none;
+  background-color: white;
 }
 
 .textBox {
@@ -49,82 +95,58 @@
   flex-direction: row;
 }
 
-h1 {
-  color: red;
-  padding-bottom: 20px;
+.advTit {
+  color: #d93025;
+  font-size: 20px;
 }
 
-.advBody {
-  margin: unset;
+.advTitMargin {
+  margin: 20px;
+  padding-bottom: 12px;
+}
+
+.searchForm {
+  margin: 20px;
+  width: 600px;
+}
+
+.titleItem {
+  height: 30px;
   display: flex;
-  position: relative;
+  align-items: center;
 }
 
-button {
-  border: 1px solid;
-  border-radius: 5px;
-  background-color: blue;
-  color: white;
+.secTit {
+  font-size: 16px;
+}
+
+.searchItem {
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+  padding-bottom: 12px;
+}
+
+.advItemTitle {
+  font-size: 12px;
 }
 
 .searchInputText {
-  width: 200px;
+  font: 16px arial, sans-serif;
+  width: 400px;
+  border: none;
+  margin: 4px;
+}
+
+.searchInputText:focus {
+  outline: none;
+  background-color: white;
 }
 
 .Abutton {
   padding: 8px;
   background-color: blue;
   color: white;
-}
-
-.callToActions {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.searchItem {
-  padding-bottom: 12px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.searchItem:last-child {
-  padding: unset;
-}
-
-.searchForm {
-  width: 400px;
-  padding: 8px;
-}
-
-.linkStyle {
-  padding: 8px;
-  color: black;
-}
-
-.navLinks {
-  position: absolute;
-  right: 0;
-  top: 0;
-  padding: 8px;
-}
-
-.docFont {
-  font-family: Roboto, HelveticaNeue, Arial, sans-serif;
-  font-size: 10pt;
-}
-
-.mainIcon {
-  padding-top: 109px;
-  padding-bottom: 20px;
-  width: 272px;
-}
-
-.magnItem {
-  padding: 12px;
-  width: 20px;
-  height: 20px;
 }
 
 /*# sourceMappingURL=googleSearch.css.map */
